@@ -1,0 +1,29 @@
+(import "import_test.onion")
+
+(print "Hello, world!")
+(wait 1.0)
+(print "This is the hello world test script!")
+(wait 1.0)
+(imported_func) # From import_test.onion
+
+(print "Number tests")
+(func test_function numberParam (
+    (print (format "The number is {0}" numberParam))
+))
+(test_function 130.76)
+(test_function 123)
+(test_function 0x86fe2a)
+(test_function (+ 500 13))
+(test_function (+ 500 13.33))
+(wait 1.0)
+
+(print "Loop tests")
+(for i 0 (< i 10) (= i (+ i 1)) (
+    (print (format "Iteration: {0}" i))
+))
+
+(let j 100)
+(while (> 0 j) (
+    (print (format "While Value: {0}" j))
+    (= j (- j 1))
+))

@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
+		<LangVersion>9.0</LangVersion>
+		<RootNamespace>OrbHall.OnionScript.Compiler</RootNamespace>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<LangVersion>9.0</LangVersion>
+		<Authors>Valax321</Authors>
+		<Company>Orb Hall</Company>
+		<Description>Lisp-based zero allocation scripting system designed for Unity and compatible with all C# systems. This library is the compiler part.</Description>
+		<Copyright>Copyright © Valax321 2022.</Copyright>
+		<PackageProjectUrl>https://github.com/Valax321/OnionScript</PackageProjectUrl>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Antlr4.Runtime.Standard" Version="4.9.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\OnionScript\OnionScript.csproj" />
+	</ItemGroup>
+
+</Project>

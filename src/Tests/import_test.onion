@@ -1,0 +1,3 @@
+(func imported_func (
+    (print "This file was imported")
+))
